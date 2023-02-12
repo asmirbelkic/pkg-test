@@ -1,0 +1,29 @@
+{
+	"name": "app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"bin": "bundle.js",
+	"scripts": {
+		"bundle": "webpack",
+		"build": "pkg ./bundle/bundle.js --target host --output dist/app.exe",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chrome-paths": "^1.0.1",
+		"edge-paths": "^3.0.5",
+		"puppeteer": "^19.6.3",
+		"webpack": "^5.75.0",
+		"webpack-node-externals": "^3.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.9.6",
+		"@babel/preset-env": "^7.9.6",
+		"@babel/preset-react": "7.9.4",
+		"babel-loader": "^8.1.0",
+		"webpack-cli": "^5.0.1"
+	}
+}
